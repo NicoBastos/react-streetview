@@ -30,11 +30,12 @@ class ReactStreetview extends React.Component {
 				}
 			});
 		}
-		this.streetView.setPosition(this.props.position);
+		
 	}
 
 	componentDidMount () {
 		this.initialize(ReactDOM.findDOMNode(this));
+		this.streetView.setPosition(this.props.position);
 	}
 
 	componentDidUpdate () {
